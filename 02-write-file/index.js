@@ -1,6 +1,6 @@
-const fs = require("fs");
+const fs = require('fs');
 const readline = require('readline');
-const path = require("path");
+const path = require('path');
 
 const textPath = path.join(__dirname, 'text.txt');
 const output = fs.createWriteStream(textPath);
@@ -29,4 +29,3 @@ process.on('SIGINT', () => {
   rl.close();
   output.close();
 });
-
